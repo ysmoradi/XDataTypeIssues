@@ -2,4 +2,30 @@
 <ContentPage
     x:Class="XDataTypeIssues.MainPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" />
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:app="clr-namespace:XDataTypeIssues"
+    x:Name="This"
+    BindingContext="{x:Reference This}">
+    <StackLayout>
+        <StackLayout x:DataType="app:MainPage">
+
+            <!--  Indexer issue => Begin  -->
+            <!--<Label Text="{Binding Data[0]}" />-->
+            <!--  Indexer issue => End  -->
+
+            <!--  Target null value issue => Begin  -->
+            <!--<BoxView BackgroundColor="{Binding SomeNullValue, TargetNullValue=Red}" />-->
+            <!--  Target null value issue => End  -->
+
+            <!--  Null object in binding path issue => Begin  -->
+            <!--<Label Text="{Binding SomeNullInstance.SomeProperty}" />-->
+            <!--  Null object in binding path issue => End  -->
+
+        </StackLayout>
+        <StackLayout>
+            <Label Text="{Binding Data[0]}" />
+            <BoxView BackgroundColor="{Binding SomeNullValue, TargetNullValue=Red}" />
+            <Label Text="{Binding SomeNullInstance.SomeProperty}" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

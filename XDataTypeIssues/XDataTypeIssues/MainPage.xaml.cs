@@ -10,6 +10,15 @@ namespace XDataTypeIssues
             InitializeComponent();
         }
 
-        public Dictionary<string, string> Data { get; set; }
+        public List<string> Data { get; set; } = new List<string> { "Test" };
+
+        public string SomeNullValue { get; set; }
+
+        public SomeClass SomeNullInstance { get; set; }
+    }
+
+    public class SomeClass
+    {
+        public string SomeProperty { get; set; }
     }
 }
