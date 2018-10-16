@@ -10,7 +10,7 @@ namespace XDataTypeIssues
             InitializeComponent();
         }
 
-        public List<string> Data { get; set; } = new List<string> { "Test" };
+        public List<string> Data { get; set; } = new List<string> { "DataFromIndexer" };
 
         public string SomeNullValue { get; set; }
 
