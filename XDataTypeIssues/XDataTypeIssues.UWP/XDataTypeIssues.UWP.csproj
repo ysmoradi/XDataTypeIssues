@@ -143,14 +143,15 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.5"/>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\XDataTypeIssues\XDataTypeIssues.csproj">
       <Project>{C498DDAD-4340-4848-8CEE-2BF07BB12A94}</Project>
       <Name>XDataTypeIssues</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms">
+      <Version>3.3.0.893527-pre3</Version>
+    </PackageReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
