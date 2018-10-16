@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace XDataTypeIssues
 {
@@ -9,8 +8,6 @@ namespace XDataTypeIssues
         {
             InitializeComponent();
         }
-
-        public List<string> Data { get; set; } = new List<string> { "DataFromIndexer" };
 
         public string SomeNullValue { get; set; }
 

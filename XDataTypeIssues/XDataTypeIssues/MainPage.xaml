@@ -9,10 +9,6 @@
     <StackLayout>
         <StackLayout x:DataType="app:MainPage" BackgroundColor="LightYellow">
 
-            <!--  Indexer issue => Begin  -->
-            <!--<Label Text="{Binding Data[0]}" />-->
-            <!--  Indexer issue => End  -->
-
             <!--  Target null value issue => Begin  -->
             <!--<Label Text="{Binding SomeNullValue, TargetNullValue='TargetNullValue'}" />-->
             <!--  Target null value issue => End  -->
@@ -23,7 +19,6 @@
 
         </StackLayout>
         <StackLayout BackgroundColor="LightGreen">
-            <Label Text="{Binding Data[0]}" />
             <Label Text="{Binding SomeNullValue, TargetNullValue='TargetNullValue'}" />
             <Label Text="{Binding SomeNullInstance.SomeProperty}" />
         </StackLayout>
